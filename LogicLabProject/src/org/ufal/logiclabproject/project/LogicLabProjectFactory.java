@@ -14,12 +14,14 @@ import org.netbeans.spi.project.ProjectState;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.NbBundle;
+import org.openide.util.lookup.ServiceProvider;
 
 /**
  *
  * @author Matheus Pedro (mps@ic.ufal.br)
  * @author Caio Oliveira (cofa@ic.ufal.br)
  */
+@ServiceProvider(service=ProjectFactory.class)
 public class LogicLabProjectFactory implements ProjectFactory {
     
     public static final String PROJECT_DIR = "ldproject";

@@ -16,7 +16,7 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle.Messages;
 import org.openide.windows.TopComponent;
 
-@MultiViewElement.Registration(
+/*@MultiViewElement.Registration(
         displayName = "#LBL_LogicDiagram_VISUAL",
         iconBase = "org/ufal/logiclabfilesupport/resources/logic-diagram-icon.png",
         mimeType = "text/logicdiagram-xml",
@@ -24,7 +24,7 @@ import org.openide.windows.TopComponent;
         preferredID = "LogicDiagramVisual",
         position = 2000
 )
-@Messages("LBL_LogicDiagram_VISUAL=Visual")
+@Messages("LBL_LogicDiagram_VISUAL=Visual") */
 public final class LogicDiagramVisualElement extends JPanel implements MultiViewElement {
 
     private LogicDiagramDataObject obj;
