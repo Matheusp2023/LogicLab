@@ -11,6 +11,7 @@ import org.openide.filesystems.FileObject;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 import org.openide.util.lookup.Lookups;
+import org.ufal.logiclabproject.actions.ActionProviderImpl;
 
 /**
  *
@@ -39,7 +40,9 @@ public class LogicLabProject implements Project {
         if (lookup == null) {
             lookup = Lookups.fixed(new Object[] {
             this,
-            state});
+            state,
+            new ActionProviderImpl()
+            });
         }
         return lookup;
     }
