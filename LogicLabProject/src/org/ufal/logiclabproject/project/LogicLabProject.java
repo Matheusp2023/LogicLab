@@ -4,13 +4,17 @@
  */
 package org.ufal.logiclabproject.project;
 
+import java.beans.PropertyChangeListener;
 import java.io.IOException;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import org.netbeans.api.project.Project;
+import org.netbeans.api.project.ProjectInformation;
 import org.netbeans.spi.project.ProjectState;
 import org.openide.filesystems.FileObject;
-import org.openide.util.Exceptions;
-import org.openide.util.Lookup;
+import org.openide.util.*;
 import org.openide.util.lookup.Lookups;
+import org.ufal.logiclabproject.actions.ActionProviderImpl;
 
 /**
  *
@@ -39,7 +43,10 @@ public class LogicLabProject implements Project {
         if (lookup == null) {
             lookup = Lookups.fixed(new Object[] {
             this,
-            state});
+            state,
+            new ActionProviderImpl(),
+            new Info()
+            });
         }
         return lookup;
     }
@@ -54,6 +61,44 @@ public class LogicLabProject implements Project {
             }
         }
         return result;
+    }
+    
+    /**
+     * Implementação da classe ProjectInformation do sistema de projeto
+     */
+    private final class Info implements ProjectInformation {
+
+        @Override
+        public String getName() {
+            return getProjectDirectory().getName();
+        }
+
+        @Override
+        public String getDisplayName() {
+            return getName();
+        }
+
+        @Override
+        public Icon getIcon() {
+            return new ImageIcon(ImageUtilities.loadImage(
+                    "org/ufal/logiclabproject/resources/circuit_icon_16.png"));
+        }
+
+        @Override
+        public Project getProject() {
+            return LogicLabProject.this;
+        }
+
+        @Override
+        public void addPropertyChangeListener(PropertyChangeListener pl) {
+            // do nothing, won't change
+        }
+
+        @Override
+        public void removePropertyChangeListener(PropertyChangeListener pl) {
+            // do nothing, won't change
+        }
+        
     }
     
 }

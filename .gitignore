@@ -2,3 +2,5 @@
 /build/
 LogicLabProject/build/
 LogicLabFileSupport/build/
+/**/nbproject/private/
+/**/nbproject/genfiles.properties
