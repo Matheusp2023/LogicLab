@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><module codename="org.ufal.logiclabproject">
-    <module_version install_time="1731111421440" last="true" origin="installer" specification_version="1.0">
-        <file crc="2375148273" name="config/Modules/org-ufal-logiclabproject.xml"/>
-        <file crc="1599169274" name="modules/org-ufal-logiclabproject.jar"/>
-    </module_version>
-</module>
