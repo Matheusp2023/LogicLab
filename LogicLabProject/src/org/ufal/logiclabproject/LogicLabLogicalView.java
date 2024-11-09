@@ -68,7 +68,7 @@ public class LogicLabLogicalView implements LogicalViewProvider {
         @Override
         public Image getIcon(int type) {
             return ImageUtilities.loadImage(
-                    "org/ufal/logicalabproject/resources/circuit_icon_16.png");
+                    "org/ufal/logiclabproject/resources/circuit_icon_16.png");
         }
 
         @Override
