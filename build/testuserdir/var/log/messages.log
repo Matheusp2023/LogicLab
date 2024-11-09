@@ -1,0 +1,334 @@
+-------------------------------------------------------------------------------
+>Log Session: Friday, November 8, 2024 at 9:17:01 PM Brasilia Standard Time
+>System Info: 
+  Product Version         = LogicLab 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194
+  Operating System        = Windows 11 version 10.0 running on amd64
+  Java; VM; Vendor        = 17.0.11; OpenJDK 64-Bit Server VM 17.0.11+12-LTS; BellSoft
+  Runtime                 = OpenJDK Runtime Environment 17.0.11+12-LTS
+  Java Home               = C:\Program Files\BellSoft\LibericaJDK-17-Full
+  System Locale; Encoding = pt_BR (logiclab); Cp1252
+  Home Directory          = C:\Users\mathe
+  Current Directory       = C:\Users\mathe\LogicLab
+  User Directory          = C:\Users\mathe\LogicLab\build\testuserdir
+  Cache Directory         = C:\Users\mathe\LogicLab\build\testuserdir\var\cache
+  Installation            = C:\Users\mathe\LogicLab\build\cluster
+                            C:\Program Files\NetBeans-17\netbeans\ide
+                            C:\Program Files\NetBeans-17\netbeans\platform
+                            C:\Program Files\NetBeans-17\netbeans\platform
+  Boot & Ext. Classpath   = 
+  Application Classpath   = C:\Program Files\NetBeans-17\netbeans\platform\lib\boot.jar;C:\Program Files\NetBeans-17\netbeans\platform\lib\org-openide-modules.jar;C:\Program Files\NetBeans-17\netbeans\platform\lib\org-openide-util-lookup.jar;C:\Program Files\NetBeans-17\netbeans\platform\lib\org-openide-util-ui.jar;C:\Program Files\NetBeans-17\netbeans\platform\lib\org-openide-util.jar
+  Startup Classpath       = C:\Program Files\NetBeans-17\netbeans\platform\core\asm-9.4.jar;C:\Program Files\NetBeans-17\netbeans\platform\core\asm-commons-9.4.jar;C:\Program Files\NetBeans-17\netbeans\platform\core\asm-tree-9.4.jar;C:\Program Files\NetBeans-17\netbeans\platform\core\core-base.jar;C:\Program Files\NetBeans-17\netbeans\platform\core\core.jar;C:\Program Files\NetBeans-17\netbeans\platform\core\org-netbeans-libs-asm.jar;C:\Program Files\NetBeans-17\netbeans\platform\core\org-openide-filesystems-compat8.jar;C:\Program Files\NetBeans-17\netbeans\platform\core\org-openide-filesystems.jar;C:\Users\mathe\LogicLab\build\cluster\core\locale\core_logiclab.jar
+-------------------------------------------------------------------------------
+INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+	org.openide.util.lookup [8.53 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.util [9.27 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.util.ui [9.28 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.modules [7.67 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.filesystems [9.32 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.api.annotations.common/1 [1.47 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.queries/1 [1.62 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.projectapi/1 [1.90 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.ufal.logiclabproject [1.0 241109]
+	org.openide.awt [7.87 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.api.progress/1 [1.67 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.api.progress.nb [1.67 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.dialogs [7.65 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.nodes [7.64 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.windows [6.96 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.editor.mimelookup/1 [1.59 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.text [6.87 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.multiview/1 [1.63 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.api.scripting [1.16 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.api.templates [1.27 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.swing.tabcontrol [1.76 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.swing.outline [1.53 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.explorer [6.81 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.actions [6.58 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.filesystems.nb [9.29 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.loaders [7.89 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.ufal.logiclabfilesupport [1.0 241109]
+	org.netbeans.libs.batik.read [1.12.0.1 1 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.util.ui.svg [1.13 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.api.intent [1.21 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.api.io [1.22 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.io [1.68 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.filesystems.compat8 [9.28 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.openide.execution [9.22 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.swing.plaf [1.61 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.spi.quicksearch [1.46 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.libs.asm [5.22 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.bootstrap/1 [2.97 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.startup.base [1.81.0.1 1 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.startup/1 [1.81.0.1 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.settings/1 [1.68 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.sendopts/2 [2.55 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.sampler [1.33 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.projectuiapi.base/1 [1.105.0.9 9 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.projectuiapi/1 [1.108.0.8 8 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.project.indexingbridge [1.36 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.keyring [1.43 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core/2 [3.70 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.execution/1 [1.61 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.masterfs/2 [2.74.0.2 2 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.options.api/1 [1.64 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.ui/1 [1.64 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.favorites/1 [1.65 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.projectui [1.78.0.8.9 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.projectapi.nb [1.23 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.progress.ui [1.52 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.print [7.45 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.options.keymap [1.56 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.libs.jna/2 [2.14 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.masterfs.windows [1.35 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.masterfs.ui [2.22.0.2 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.masterfs.nio2 [1.34 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.keyring.fallback [1.27 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.keyring.impl [1.43 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.html.xhr4j [1.8.1 1.8.1]
+	net.java.html.json [1.8.1 1.8.1]
+	net.java.html [1.8.1 1.8.1]
+	net.java.html.boot [1.8.1 1.8.1]
+	org.netbeans.html.ko4j [1.8.1 1.8.1]
+	org.netbeans.api.htmlui [1.27 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.libs.javafx [2.26 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	net.java.html.boot.fx [1.8.1 1.8.1]
+	org.netbeans.modules.htmlui [1.4 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.modules.editor.mimelookup.impl/1 [1.51 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.libs.osgi [1.41 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.libs.jna.platform/2 [2.14 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.libs.felix [2.34 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.windows/2 [2.104 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.output2/1 [1.61 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.network [1.31 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.netigso [1.50 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.nativeaccess/1 [1.50 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.multitabs/1 [1.31.0.1 1 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+	org.netbeans.core.io.ui/1 [1.49 17-ac2b269fa33a277ff09bc424fb9a5a8c63ed2194]
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.felix.framework@7.0.3 started
+WARNING [org.openide.filesystems.Ordering]: Not all children in Services/MIMEResolver/ marked with the position attribute: [org-ufal-logiclabfilesupport-file-LogicDiagramDataObject-Extension.xml], but some are: [org-openide-loaders-DataLoaderPool$InstanceLoaderSystem-Extension.xml, org-netbeans-core-startup-layers-SystemFileSystem-Extension.xml]
+WARNING [null]: Last record repeated again.
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy resolver: Windows
+INFO [org.netbeans.core.network.proxy.windows.WindowsNetworkProxy]: Windows system proxy resolver: auto detect
+INFO [org.netbeans.core.network.proxy.windows.WindowsNetworkProxy]: Windows system proxy resolver: auto - PAC (http://wpad/wpad.dat)
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading succeeded.
+java.lang.IllegalAccessException: class org.netbeans.TopSecurityManager cannot access class sun.awt.AppContext (in module java.desktop) because module java.desktop does not export sun.awt to unnamed module @37bba400
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at org.netbeans.TopSecurityManager.makeSwingUseSpecialClipboard(TopSecurityManager.java:714)
+	at org.netbeans.core.NbLifecycleManager.advancePolicy(NbLifecycleManager.java:71)
+	at org.netbeans.core.network.proxy.ProxyAutoConfig$1.run(ProxyAutoConfig.java:81)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:287)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+WARNING [org.netbeans.core.execution.AccController]
+java.lang.reflect.InaccessibleObjectException: Unable to make field private java.security.ProtectionDomain[] java.security.AccessControlContext.context accessible: module java.base does not "opens java.security" to unnamed module @4ecabe8
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at org.netbeans.core.execution.AccController.getContextField(AccController.java:50)
+	at org.netbeans.core.execution.AccController.getDomains(AccController.java:58)
+	at org.netbeans.core.execution.AccController.getIOPermissionCollection(AccController.java:78)
+	at org.netbeans.core.execution.AccController.getIOPermissionCollection(AccController.java:72)
+	at org.netbeans.core.execution.SecMan.checkTopLevelWindow(SecMan.java:105)
+	at org.netbeans.core.execution.SecMan.checkPermission(SecMan.java:97)
+	at org.netbeans.TopSecurityManager.checkTopLevelWindow(TopSecurityManager.java:208)
+	at org.netbeans.TopSecurityManager.checkPermission(TopSecurityManager.java:484)
+	at java.desktop/java.awt.Window.setWarningString(Window.java:1408)
+	at java.desktop/java.awt.Window.init(Window.java:508)
+	at java.desktop/java.awt.Window.<init>(Window.java:554)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at org.netbeans.core.windows.view.ViewHierarchy.getMainWindow(ViewHierarchy.java:115)
+	at org.netbeans.core.windows.view.DefaultView.getMainWindow(DefaultView.java:79)
+	at org.netbeans.core.windows.ViewRequestor.getMainWindow(ViewRequestor.java:81)
+	at org.netbeans.core.windows.Central.getMainWindow(Central.java:1819)
+	at org.netbeans.core.windows.WindowManagerImpl.getMainWindow(WindowManagerImpl.java:168)
+	at org.netbeans.core.TimableEventQueue$2.run(TimableEventQueue.java:114)
+	at org.netbeans.core.TimableEventQueue$2.run(TimableEventQueue.java:109)
+	at org.netbeans.modules.openide.util.NbMutexEventProvider$Event$1AWTWorker.lambda$run$0(NbMutexEventProvider.java:143)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:287)
+	at org.netbeans.modules.openide.util.NbMutexEventProvider$Event$1AWTWorker.run(NbMutexEventProvider.java:141)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:308)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+[catch] at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
+INFO [org.netbeans.core.network.proxy.ProxyAutoConfig]: InputStream for http://wpad/wpad.dat throws 
+java.net.UnknownHostException: wpad
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:281)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1287)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1118)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1116)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:962)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1115)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1687)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1603)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1601)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:962)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1600)
+	at org.netbeans.core.network.proxy.ProxyAutoConfig.downloadPAC(ProxyAutoConfig.java:155)
+[catch] at org.netbeans.core.network.proxy.ProxyAutoConfig.initEngine(ProxyAutoConfig.java:94)
+	at org.netbeans.core.network.proxy.ProxyAutoConfig$1.run(ProxyAutoConfig.java:82)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:287)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy - mode: auto
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy - pac url: http://wpad/wpad.dat
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy TEST - http host: 
+INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy TEST - http port: 0
+Diagnostic information
+Input arguments:
+	-Dnetbeans.logger.console=true
+	-ea
+	-Djdk.home=C:\Program Files\BellSoft\LibericaJDK-17-Full
+	-Dnetbeans.home=C:\Program Files\NetBeans-17\netbeans\platform
+	-Dnetbeans.user=C:\Users\mathe\LogicLab\build\testuserdir
+	-Dnetbeans.default_userdir_root=
+	-XX:+HeapDumpOnOutOfMemoryError
+	-XX:HeapDumpPath=C:\Users\mathe\LogicLab\build\testuserdir\var\log\heapdump.hprof
+	-Dsun.awt.keepWorkingSetOnMinimize=true
+	-Djava.security.manager=allow
+	-Dnetbeans.dirs=C:\Users\mathe\LogicLab\build\cluster;C:\Program Files\NetBeans-17\netbeans\ide;C:\Program Files\NetBeans-17\netbeans\platform
+	exit
+Compiler: HotSpot 64-Bit Tiered Compilers
+Heap memory usage: initial 512,0MB maximum 8132,0MB
+Non heap memory usage: initial 7,3MB maximum -1b
+Garbage collector: G1 Young Generation (Collections=6 Total time spent=0s)
+Garbage collector: G1 Old Generation (Collections=0 Total time spent=0s)
+Classes: loaded=6817 total loaded=6818 unloaded 1
+INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 34.091.532.288
+INFO [null]: Total physical memory 34.091.532.288
+WARNING [org.netbeans.core.execution.AccController]
+java.lang.reflect.InaccessibleObjectException: Unable to make field private java.security.ProtectionDomain[] java.security.AccessControlContext.context accessible: module java.base does not "opens java.security" to unnamed module @4ecabe8
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at org.netbeans.core.execution.AccController.getContextField(AccController.java:50)
+	at org.netbeans.core.execution.AccController.getDomains(AccController.java:58)
+	at org.netbeans.core.execution.AccController.getIOPermissionCollection(AccController.java:78)
+	at org.netbeans.core.execution.AccController.getIOPermissionCollection(AccController.java:72)
+	at org.netbeans.core.execution.SecMan.checkTopLevelWindow(SecMan.java:105)
+	at org.netbeans.core.execution.SecMan.checkPermission(SecMan.java:97)
+	at org.netbeans.TopSecurityManager.checkTopLevelWindow(TopSecurityManager.java:208)
+	at org.netbeans.TopSecurityManager.checkPermission(TopSecurityManager.java:484)
+	at java.desktop/java.awt.Window.setWarningString(Window.java:1408)
+	at java.desktop/java.awt.Window.init(Window.java:508)
+	at java.desktop/java.awt.Window.<init>(Window.java:453)
+	at java.desktop/java.awt.Window.<init>(Window.java:608)
+	at java.desktop/java.awt.Dialog.<init>(Dialog.java:675)
+	at java.desktop/java.awt.Dialog.<init>(Dialog.java:419)
+	at java.desktop/javax.swing.JDialog.<init>(JDialog.java:273)
+	at java.desktop/javax.swing.JFileChooser.createDialog(JFileChooser.java:816)
+[catch] at java.desktop/javax.swing.JFileChooser.showDialog(JFileChooser.java:761)
+	at java.desktop/javax.swing.JFileChooser.showOpenDialog(JFileChooser.java:667)
+	at org.netbeans.modules.project.ui.actions.OpenProject.show(OpenProject.java:105)
+	at org.netbeans.modules.project.ui.actions.OpenProject.actionPerformed(OpenProject.java:78)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:298)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6626)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3389)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6391)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5001)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:136)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+WARNING [org.netbeans.core.execution.AccController]
+java.lang.reflect.InaccessibleObjectException: Unable to make field private java.security.ProtectionDomain[] java.security.AccessControlContext.context accessible: module java.base does not "opens java.security" to unnamed module @4ecabe8
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at org.netbeans.core.execution.AccController.getContextField(AccController.java:50)
+	at org.netbeans.core.execution.AccController.getDomains(AccController.java:58)
+	at org.netbeans.core.execution.AccController.getIOPermissionCollection(AccController.java:78)
+	at org.netbeans.core.execution.AccController.getIOPermissionCollection(AccController.java:72)
+	at org.netbeans.core.execution.SecMan.checkTopLevelWindow(SecMan.java:105)
+	at org.netbeans.core.execution.SecMan.checkPermission(SecMan.java:97)
+	at org.netbeans.TopSecurityManager.checkTopLevelWindow(TopSecurityManager.java:208)
+	at org.netbeans.TopSecurityManager.checkPermission(TopSecurityManager.java:484)
+	at java.desktop/java.awt.Window.setWarningString(Window.java:1408)
+	at java.desktop/java.awt.Window.init(Window.java:508)
+	at java.desktop/java.awt.Window.<init>(Window.java:453)
+	at java.desktop/java.awt.Window.<init>(Window.java:608)
+	at java.desktop/java.awt.Dialog.<init>(Dialog.java:675)
+	at java.desktop/java.awt.Dialog.<init>(Dialog.java:419)
+	at java.desktop/javax.swing.JDialog.<init>(JDialog.java:273)
+	at org.netbeans.core.windows.services.NbPresenter.<init>(NbPresenter.java:179)
+	at org.netbeans.core.windows.services.NbDialog.<init>(NbDialog.java:42)
+[catch] at org.netbeans.core.windows.services.DialogDisplayerImpl$AWTQuery.showDialog(DialogDisplayerImpl.java:245)
+	at org.netbeans.core.windows.services.DialogDisplayerImpl$AWTQuery.run(DialogDisplayerImpl.java:175)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:136)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+WARNING [null]: Last record repeated again.
+WARNING [null]: Last record repeated again.
+WARNING [org.openide.filesystems.Ordering]: Not all children in Templates/ marked with the position attribute: [Other], but some are: [Licenses, Privileged, Project, Recent, Services]
+INFO [org.netbeans.core.netigso.Netigso]: bundle org.apache.felix.framework@7.0.3 256
