@@ -18,6 +18,7 @@ import org.openide.util.*;
 /**
  *
  * @author Matheus Pedro (mps@ic.ufal.br)
+ * @author Caio Oliveira (cofa@ic.ufal.br)
  */
 public class LogicLabProjectFactory implements ProjectFactory {
     
@@ -62,4 +63,37 @@ public class LogicLabProjectFactory implements ProjectFactory {
                 LogicLabProjectFactory.class, "PROJECT_PROPERTIES_TITLE"));
     }
     
+ private Properties loadProperties(FileObject projectDir, ProjectState state) {
+        FileObject fob = projectDir.getFileObject(PROJECT_DIR + "/" + PROJECT_PROPFILE);
+        Properties properties = new NotifyProperties(state);
+        
+        if (fob != null) {
+            try {
+                properties.load(fob.getInputStream());
+            } catch (IOException e) {
+                Exceptions.printStackTrace(e);
+            }
+        }
+        
+        return properties;
+    }
+
+    private static class NotifyProperties extends Properties {
+        private final ProjectState state;
+
+        NotifyProperties(ProjectState state) {
+            this.state = state;
+        }
+
+        @Override
+        public Object put(Object key, Object val) {
+            Object result = super.put(key, val);
+
+            if (((result == null) != (val == null)) || (result != null && val != null && !val.equals(result))) {
+                state.markModified();
+            }
+
+            return result;
+        }
+    }
 }
