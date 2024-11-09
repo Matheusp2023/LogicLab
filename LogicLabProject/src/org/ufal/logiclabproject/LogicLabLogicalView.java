@@ -21,7 +21,7 @@ import org.ufal.logiclabproject.project.LogicLabProject;
  */
 public class LogicLabLogicalView implements LogicalViewProvider {
     
-    private LogicLabProject project;
+    private final LogicLabProject project;
     
     public LogicLabLogicalView(LogicLabProject project) {
         this.project = project;

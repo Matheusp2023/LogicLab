@@ -12,11 +12,13 @@ import javax.swing.ImageIcon;
 import org.netbeans.api.project.Project;
 import org.netbeans.api.project.ProjectInformation;
 import org.netbeans.spi.project.ProjectState;
+import org.netbeans.spi.project.ui.LogicalViewProvider;
 import org.openide.filesystems.FileObject;
 import org.openide.util.Exceptions;
 import org.openide.util.ImageUtilities;
 import org.openide.util.Lookup;
 import org.openide.util.lookup.Lookups;
+import org.ufal.logiclabproject.LogicLabLogicalView;
 import org.ufal.logiclabproject.actions.ActionProviderImpl;
 
 /**
@@ -31,6 +33,8 @@ public class LogicLabProject implements Project {
     private final FileObject projectDir;
     private final ProjectState state;
     private Lookup lookup;
+    
+    LogicalViewProvider logicalView = new LogicLabLogicalView(this);
 
     public LogicLabProject(FileObject projectDir, ProjectState state) {
         this.projectDir = projectDir;
@@ -50,7 +54,8 @@ public class LogicLabProject implements Project {
             state,
             new ActionProviderImpl(),
             new Info(),
-            loadProperties()
+            loadProperties(),
+            logicalView
             });
         }
         return lookup;
