@@ -13,7 +13,7 @@ import org.netbeans.spi.project.ProjectFactory;
 import org.netbeans.spi.project.ProjectState;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
-import org.openide.util.*;
+import org.openide.util.NbBundle;
 
 /**
  *
@@ -62,38 +62,5 @@ public class LogicLabProjectFactory implements ProjectFactory {
         properties.store(new FileOutputStream(file), NbBundle.getMessage(
                 LogicLabProjectFactory.class, "PROJECT_PROPERTIES_TITLE"));
     }
-    
- private Properties loadProperties(FileObject projectDir, ProjectState state) {
-        FileObject fob = projectDir.getFileObject(PROJECT_DIR + "/" + PROJECT_PROPFILE);
-        Properties properties = new NotifyProperties(state);
-        
-        if (fob != null) {
-            try {
-                properties.load(fob.getInputStream());
-            } catch (IOException e) {
-                Exceptions.printStackTrace(e);
-            }
-        }
-        
-        return properties;
-    }
 
-    private static class NotifyProperties extends Properties {
-        private final ProjectState state;
-
-        NotifyProperties(ProjectState state) {
-            this.state = state;
-        }
-
-        @Override
-        public Object put(Object key, Object val) {
-            Object result = super.put(key, val);
-
-            if (((result == null) != (val == null)) || (result != null && val != null && !val.equals(result))) {
-                state.markModified();
-            }
-
-            return result;
-        }
-    }
 }
