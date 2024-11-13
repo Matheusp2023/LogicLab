@@ -19,6 +19,7 @@ import org.openide.util.ImageUtilities;
 import org.openide.util.Lookup;
 import org.openide.util.lookup.Lookups;
 import org.ufal.logiclabproject.LogicLabLogicalView;
+import org.ufal.logiclabproject.MainFileProviderImpl;
 import org.ufal.logiclabproject.actions.ActionProviderImpl;
 
 /**
@@ -29,6 +30,7 @@ import org.ufal.logiclabproject.actions.ActionProviderImpl;
 public class LogicLabProject implements Project {
     
     public static final String CIRCUITS_DIR = "circuits";
+    public static final String KEY_MAINFILE = "main.file";
     
     private final FileObject projectDir;
     private final ProjectState state;
@@ -55,7 +57,8 @@ public class LogicLabProject implements Project {
             new ActionProviderImpl(),
             new Info(),
             loadProperties(),
-            logicalView
+            logicalView,
+            new MainFileProviderImpl(this)
             });
         }
         return lookup;

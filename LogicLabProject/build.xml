@@ -5,4 +5,15 @@
 <project name="org.ufal.logiclabproject" default="netbeans" basedir=".">
     <description>Builds, tests, and runs the project org.ufal.logiclabproject.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+    <target name="netbeans" depends="package-samples,projectized-common.netbeans"/>
+
+    <target name="package-samples">
+
+        <delete file="${basedir}/src/org/ufal/logiclabproject/templates/EmptyLogicLabProjectProject.zip"/>
+
+        <zip compress="9" basedir="src/org/ufal/logiclabproject/templates/EmptyLogicLabProject"
+                zipfile="${basedir}/src/org/ufal/logiclabproject/templates/EmptyLogicLabProjectProject.zip"/>
+
+    </target>
 </project>

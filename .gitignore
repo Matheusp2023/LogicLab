@@ -4,3 +4,5 @@ LogicLabProject/build/
 LogicLabFileSupport/build/
 /**/nbproject/private/
 /**/nbproject/genfiles.properties
+LogicLabProject/src/org/ufal/logiclabproject/templates/EmptyLogicLabProjectProject.zip
+/LogicLabAPI/build/
