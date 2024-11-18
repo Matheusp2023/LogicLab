@@ -5,4 +5,35 @@
 <project name="org.ufal.logiclabapi" default="netbeans" basedir=".">
     <description>Builds, tests, and runs the project org.ufal.logiclabapi.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+    <!-- Configuração de propriedades -->
+    <property name="xsd.file" value="src/org/ufal/logiclabapi/resource/schema/circuit.xsd" />
+    <property name="output.dir" value="src" />
+    <property name="output.pkg" value="org.ufal.logiclabapi.xmlclasses.circuit"/>
+    <property name="lib.dir" value="release/modules/ext" />
+
+    <!-- Classpath para os arquivos .jar -->
+    <path id="xjc.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+    <!-- Target principal -->
+    <target name="pre-build" description="Gerar classes Java a partir do XSD">
+        <!-- Garante que a pasta de saída exista -->
+        <mkdir dir="src/org/ufal/logiclabapi/xmlclasses/circuit" />
+               
+        <!-- Chama o XJC para gerar classes -->
+        <java classname="com.sun.tools.xjc.XJCFacade" fork="true" failonerror="true">
+            <classpath refid="xjc.classpath" />
+            <arg value="-p" />
+            <arg value="${output.pkg}" />
+            <arg value="-d" />
+            <arg value="${output.dir}" />
+            <arg value="-encoding" />
+            <arg value="UTF-8" />
+            <arg value="${xsd.file}" />
+        </java>
+    </target>
 </project>

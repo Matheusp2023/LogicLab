@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <!-- Elemento raiz -->
+    <xs:element name="Circuit">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Lista de Portas -->
+                <xs:element name="Gates" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Porta pode ser de qualquer tipo (NOT, OR, AND) -->
+                            <xs:choice maxOccurs="unbounded">
+                                <xs:element ref="NOT" />
+                                <xs:element ref="OR" />
+                                <xs:element ref="AND" />
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <!-- Lista de Conexões -->
+                <xs:element name="Connections" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Connection" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="fromGate" type="xs:string" use="required" />
+                                    <xs:attribute name="fromPin" type="xs:string" use="required" />
+                                    <xs:attribute name="toGate" type="xs:string" use="required" />
+                                    <xs:attribute name="toPin" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definição das Portas -->
+    <xs:element name="NOT">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Position" type="GridPosition" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+            <xs:attribute name="inputPin" type="xs:string" use="required" />
+            <xs:attribute name="outputPin" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="OR">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Position" type="GridPosition" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+            <xs:attribute name="inputPin1" type="xs:string" use="required" />
+            <xs:attribute name="inputPin2" type="xs:string" use="required" />
+            <xs:attribute name="outputPin" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="AND">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Position" type="GridPosition" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+            <xs:attribute name="inputPin1" type="xs:string" use="required" />
+            <xs:attribute name="inputPin2" type="xs:string" use="required" />
+            <xs:attribute name="outputPin" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Tipo para a posição no grid -->
+    <xs:complexType name="GridPosition">
+        <xs:attribute name="x" type="xs:int" use="required" />
+        <xs:attribute name="y" type="xs:int" use="required" />
+    </xs:complexType>
+</xs:schema>

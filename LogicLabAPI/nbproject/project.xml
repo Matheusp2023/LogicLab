@@ -28,6 +28,34 @@
                 <package>org.ufal.logiclabapi.controller</package>
                 <package>org.ufal.logiclabapi.logicgates</package>
             </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/jaxb-impl.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/jaxb-impl.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/jaxb-core.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/jaxb-core.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/jakarta.xml.bind-api.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/jakarta.xml.bind-api.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/jaxb-xjc.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/jaxb-xjc.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/jaxb-jxc.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/jaxb-jxc.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/jakarta.activation-api.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/jakarta.activation-api.jar</binary-origin>
+            </class-path-extension>
+            <class-path-extension>
+                <runtime-relative-path>ext/angus-activation.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/angus-activation.jar</binary-origin>
+            </class-path-extension>
         </data>
     </configuration>
 </project>
